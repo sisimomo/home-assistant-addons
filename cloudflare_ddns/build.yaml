@@ -1,7 +1,7 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-dockerfile
 build_from:
-  aarch64: "ghcr.io/hassio-addons/debian-base:buster"
-  amd64: "ghcr.io/hassio-addons/debian-base:buster"
-  armhf: "ghcr.io/hassio-addons/debian-base:buster"
-  armv7: "ghcr.io/hassio-addons/debian-base:buster"
-  i386: "ghcr.io/hassio-addons/debian-base:buster"
+  aarch64: "ghcr.io/hassio-addons/debian-base:stable"
+  amd64: "ghcr.io/hassio-addons/debian-base:stable"
+  armhf: "ghcr.io/hassio-addons/debian-base:stable"
+  armv7: "ghcr.io/hassio-addons/debian-base:stable"
+  i386: "ghcr.io/hassio-addons/debian-base:stable"
