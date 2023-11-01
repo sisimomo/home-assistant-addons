@@ -1,0 +1,46 @@
+---
+version: 1.0.0
+slug: cloudflare_ddns
+name: Cloudflare DDNS
+description: Access your home network remotely via a custom domain name without a static IP!
+url: https://github.com/sisimomo/home-assistant-addons/tree/master/cloudflare_ddns
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+host_network: true
+image: ghcr.io/sisimomo/cloudflare_ddns-{arch}
+init: false
+map:
+  - share
+options:
+  cloudflare:
+    - authentication_api_token: api_token_here
+      zone_id: your_zone_id_here
+      subdomains_name: foo
+      subdomains_proxied: false
+  load_balancer: []
+  a: true
+  aaaa: true
+  purgeUnknownRecords: false
+  ttl: 300
+schema:
+  cloudflare:
+    - authentication_api_token: str?
+      authentication_api_key: str?
+      authentication_account_email: str?
+      zone_id: str
+      subdomains_name: str
+      subdomains_proxied: bool
+  load_balancer:
+    - authentication_api_token: str?
+      authentication_api_key: str?
+      authentication_account_email: str?
+      pool_id: str
+      origin: str
+  a: bool
+  aaaa: bool
+  purgeUnknownRecords: bool
+  ttl: int(30,86400)

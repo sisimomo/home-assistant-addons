@@ -1,0 +1,24 @@
+---
+configuration:
+  cloudflare:
+    name: cloudflare
+    description: >-
+      The list of all the Cloudflare subdomains to create/update with public ip address.
+  load_balancer:
+    name: load Balancing
+    description: >-
+      Create a CNAME record for each subdomain that points to the subdomain with the lowest IP address.
+  a:
+    name: IPV4
+    description: Use the IPV4 IP address.
+  aaaa:
+    name: IPV6
+    description: Use the IPV6 IP address.
+  purgeUnknownRecords:
+    name: Purge unknown records
+    description: >-
+      removes stale DNS records from Cloudflare. This is useful if you have a dynamic DNS record that you no longer want to use. If you have a dynamic DNS record that you no longer want to use, you can set purgeUnknownRecords to true and the script will remove the stale DNS record from Cloudflare.
+  ttl:
+    name: Time to live
+    description: >-
+      Defaults to 300 seconds. Longer TTLs speed up DNS lookups by increasing the chance of cached results, but a longer TTL also means that updates to your records take longer to go into effect. You can choose a TTL between 30 seconds and 1 day. For more information, see [Cloudflare's TTL documentation](https://developers.cloudflare.com/dns/manage-dns-records/reference/ttl/).
