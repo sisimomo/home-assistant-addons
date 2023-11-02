@@ -11,7 +11,7 @@ arch:
   - amd64
   - i386
 host_network: true
-image: ghcr.io/sisimomo/cloudflare_ddns-{arch}
+image: ghcr.io/sisimomo/home_assistant_addon-cloudflare_ddns-{arch}
 init: false
 map:
   - share
