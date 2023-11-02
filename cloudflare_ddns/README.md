@@ -4,8 +4,6 @@ Access your home network remotely via a custom domain name without a static IP!
 
 Developed by [timothymiller](https://github.com/timothymiller) in the repository [cloudflare-ddns](https://github.com/timothymiller/cloudflare-ddns/).
 
-![Supports aarch64 Architecture][aarch64-shield] ![Supports amd64 Architecture][amd64-shield] ![Supports armhf Architecture][armhf-shield] ![Supports armv7 Architecture][armv7-shield] ![Supports i386 Architecture][i386-shield]
-
 ## About
 
 ### ⚡ Efficiency

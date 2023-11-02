@@ -3,7 +3,7 @@ version: 1.0.0
 slug: cloudflare_ddns
 name: Cloudflare DDNS
 description: Access your home network remotely via a custom domain name without a static IP!
-url: https://github.com/sisimomo/home-assistant-addons/tree/master/cloudflare_ddns
+url: https://github.com/sisimomo/home-assistant-addons/tree/main/cloudflare_ddns
 arch:
   - armhf
   - armv7
